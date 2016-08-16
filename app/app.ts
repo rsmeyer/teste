@@ -8,6 +8,10 @@ import {ButtonTestPage} from './pages/button-test/button-test';
 import {CardTestPage} from './pages/card-test/card-test';
 import {IconTestPage} from './pages/icon-test/icon-test';
 import {InputTestPage} from './pages/input-test/input-test';
+import {ListTestPage} from './pages/list-test/list-test';
+import {GridTestPage} from './pages/grid-test/grid-test';
+import {ModalTestPage} from './pages/modal-test/modal-test';
+import {ToastTestPage} from './pages/toast-test/toast-test';
 
 @Component({
   templateUrl: 'build/app.html'
@@ -21,6 +25,10 @@ export class MyApp {
   card: any = CardTestPage;
   icons: any = IconTestPage;
   inputs: any = InputTestPage;
+  lists: any = ListTestPage;
+  grids: any = GridTestPage;
+  modals: any = ModalTestPage;
+  toasts: any = ToastTestPage;
 
   rootPage: any = this.home;
 

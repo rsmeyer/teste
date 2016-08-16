@@ -1,0 +1,34 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>List Test</ion-title>
+    <button menuToggle>
+      <ion-icon name="menu">
+      </ion-icon>
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+  <ion-item-sliding *ngFor="let p of personagens">
+    <ion-item>
+      <h2>{{p}}</h2>
+    </ion-item>
+    <ion-item-options side="right">
+      <button primary>
+        <ion-icon name="text"></ion-icon>
+        Text
+      </button>
+      <button secondary>
+        <ion-icon name="call"></ion-icon>
+        Call
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+</ion-content>
